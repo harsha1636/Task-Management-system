@@ -24,9 +24,9 @@ Basic authentication is implemented using the Authorization header in the format
 Username: Admin<br/>Password: password123
 
 # Routes
-GET /tasks<br/>Description: Retrieve all tasks.<br/>Response: Array of all tasks.<br/>GET /tasks/:id<br/>Description: Retrieve a specific task by its ID.<br/>Parameters: id (integer, required).<br/>Response: The task with the given ID.<br/>POST /tasks/create<br/>Description: Create a new task.
-Body<br/>{<br/>"title": "string",<br/>"description": "string",<br/>"due_date": "YYYY-MM-DD",<br/>"status": "pending | in_progress | completed"<br/>}<br/>Response: The created task.<br/>PUT /tasks/:id<br/>Description: Update an existing task.<br/>Parameters: id (integer, required).
-Body<br/>{<br/>"title": "string",<br/>"description": "string",<br/>"due_date": "YYYY-MM-DD",<br/>"status": "pending | in_progress | completed"<br/>}<br/>DELETE /tasks/:id<br/>Description: Delete a task.<br/>Parameters: id (integer, required).<br/>Response: No content (204).<br/>PATCH /tasks/:id/complete<br/>Description: Mark a task as complete.<br/>Parameters: id (integer, required).<br/>Response: The updated task with status set to be completed.
+-GET /tasks<br/>Description: Retrieve all tasks.<br/>Response: Array of all tasks.<br/>-GET /tasks/:id<br/>Description: Retrieve a specific task by its ID.<br/>Parameters: id (integer, required).<br/>Response: The task with the given ID.<br/>-POST /tasks/create<br/>Description: Create a new task.
+Body<br/>{<br/>"title": "string",<br/>"description": "string",<br/>"due_date": "YYYY-MM-DD",<br/>"status": "pending | in_progress | completed"<br/>}<br/>Response: The created task.<br/>-PUT /tasks/:id<br/>Description: Update an existing task.<br/>Parameters: id (integer, required).
+Body<br/>{<br/>"title": "string",<br/>"description": "string",<br/>"due_date": "YYYY-MM-DD",<br/>"status": "pending | in_progress | completed"<br/>}<br/>-DELETE /tasks/:id<br/>Description: Delete a task.<br/>Parameters: id (integer, required).<br/>Response: No content (204).<br/>-PATCH /tasks/:id/complete<br/>Description: Mark a task as complete.<br/>Parameters: id (integer, required).<br/>Response: The updated task with status set to be completed.
 
 # Middlewear
 body-parser - Used to parse incoming request bodies as JSON.<br/>authenticate - Middleware to enforce Basic Authentication.
