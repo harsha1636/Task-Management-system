@@ -17,7 +17,6 @@ Basic authentication required for some endpoints.
 # Additional Operations:
 Mark a task as complete.
 
-# Endpoints
 # Authentication
 Basic authentication is implemented using the Authorization header in the format:<br/>Authorization: Basic <Base64-encoded-username:password>
 
