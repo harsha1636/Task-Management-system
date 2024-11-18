@@ -6,7 +6,7 @@ This is a Node.js-based Task Management API built with Express.js. The API allow
 
 # Features
 # CRUD Operations:
--Retrieve all tasks.
+-Retrieve all tasks.< br / >
 -Retrieve a specific task by ID.
 -Create a new task.
 -Update an existing task.
