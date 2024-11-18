@@ -25,8 +25,8 @@ Basic authentication is implemented using the Authorization header in the format
 Username: Admin<br/>Password: password123
 
 # Routes
-# GET /tasks
-Description: Retrieve all tasks.<br/>Response: Array of all tasks.
+**GET /tasks
+**Description: Retrieve all tasks.<br/>Response: Array of all tasks.
 # GET /tasks/:id
 Description: Retrieve a specific task by its ID.<br/>Parameters: id (integer, required).<br/>Response: The task with the given ID.
 # POST /tasks/create
